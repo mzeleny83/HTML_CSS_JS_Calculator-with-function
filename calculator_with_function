@@ -1,0 +1,11 @@
+const paragraphToWebsite = (text, result, whereToAdd) => {
+  const newParagraph = document.createElement("p");
+  newParagraph.textContent = text + result;
+  whereToAdd.append(newParagraph);
+};
+
+// Přidání výpočtů do stránky
+paragraphToWebsite("Součet: ", addition, section);
+paragraphToWebsite("Rozdíl: ", subtraction, section);
+paragraphToWebsite("Součin: ", multiplication, section);
+paragraphToWebsite("Podíl: ", division, section);
